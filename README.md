@@ -9,7 +9,7 @@
 
 **[Step 3]** Run _comment_bug_relation_processing_simple_ast.ipynb_ under **PKL file creating using AST** to process those AST for preparing pk file to measure the inconsistency between code and correspondent comments. This notebook uses two JSON file containing the AST infromation named as _ast_test_bug.json_ and _ast_test_nobug.json_. You can generate those by executing previous steps or found under the _PKL file creating using AST_ folder. It creates two pkl file for bug and non-bug data.
 
-**[Step 4]** Run _siamese-run-Code_Comment.ipynb_ under **Model Run** to calculate the inconsistency between code and correspondent comments using pretrained siamese neural network. This notebook uses pre-trained RNN-LSTM model, previously generated pkl file, and benchmark data pkls as input. You can find entire prerequisite files under _Model Run_ folder. You have to use bug and non-bug pkl seperately to cellect their coherence value. This step generate a list of coherence values for the targated pairs. This steps need GPU for execution.  
+**[Step 4]** Run _siamese-run-Code_Comment.ipynb_ under **Model Run** to calculate the inconsistency between code and correspondent comments using pretrained siamese neural network. This notebook uses pre-trained RNN-LSTM model, previously generated pkl file, and benchmark data pkls as input. You can find entire prerequisite files under _Model Run_ folder. You have to use bug and non-bug pkl seperately to cellect their coherence value. This step generate a list of coherence values for the targated pairs. This step need GPU for execution.  
 
 **[Step 5]** Run _Result_Visualization.ipynb_ under **Result visualization** section for drawing diagram of results.  
 
